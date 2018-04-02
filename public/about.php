@@ -1,3 +1,14 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Marie-Anne Toonen (Phinux)
+ * Date: 27-3-2018
+ * Time: 10:14
+ */
+
+$title = "About";
+?>
+
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -8,16 +19,10 @@
 <body>
 <!-- I use the bootstrap way to center the page-->
 <div class='container'>
-    <header>
-        <h1>About</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href='index.php'>Home</a></li>
-            <li><a href='about.html'>About</a></li>
-            <li><a href='contact.html'>Contact</a></li>
-        </ul>
-    </nav>
+    <?php
+    include("../app/views/header.php");
+    include("../app/views/nav.php")
+    ?>
     <main>
         <h2>Wie ben ik?</h2>
         <p>Tussen mijn collega programmeurs val ik vaak op door mijn enthousiasme, mijn nieuwsgierigheid en
@@ -37,9 +42,9 @@
            beste oplossing voor de klant. Verder denken dan code is dan ook mijn sterke kant.
         </p>
     </main>
-    <footer>
-        <small>&copy; Copyright 2018, Marie-Anne Toonen</small>
-    </footer>
+    <?php
+    include("../app/views/footer.php")
+    ?>
 </div>
 </body>
 </html>
